@@ -20,6 +20,8 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm ci
-        npm run dev
+        npm run prod
+        cd dist
+        serve .
       env:
         CI: true
