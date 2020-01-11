@@ -21,5 +21,7 @@ jobs:
       run: |
         npm ci
         npm run prod
+        cd dist
+        serve .
       env:
         CI: true
